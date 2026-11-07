@@ -1,0 +1,284 @@
+[2026-11-07 21:52:34] [START] Dead Man's Switch started | script=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base/Dead Man's Switch.py | python=3.13.13 | cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base
+[*] Log file: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch/Logs/Dead_Mans_Switch_Log_2026-11-07_21-52-34.txt
+===================================
+ Dead Man's Switch (Termux, no root)
+===================================
+Local folder: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch (resolved: /storage/emulated/0/Download/Dead Man's Switch)  (downloads: /data/data/com.termux/files/home/storage/downloads)
+Log file    : /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch/Logs/Dead_Mans_Switch_Log_2026-11-07_21-52-34.txt
+GitHub repo : dead-mans-switch (preference: PUBLIC)
+Version     : 2026-06-02 force-new-repo-visible-v3
+Script file : /data/data/com.termux/files/home/DedSec/Scripts/Developer Base/Dead Man's Switch.py
+Upload rules:
+ - Missing Termux packages install automatically only when needed.
+ - Each batch push <= 40MB total; any single file > 40MB is skipped.
+ - Before normal repository publishes, the previous snapshot is zipped in History/.
+ - Repository cleanup removes old Git-tracked files from the repo, not from your phone storage.
+Modes:
+ - Create/Update: archives previous snapshot, rebuilds README + GitHub Pages, uploads current files.
+ - I Need Help: first-time setup, queues existing local files, emergency capture, auto-upload, SMS alert, public website.
+Login persists via GitHub CLI in Termux HOME (~/.config/gh).
+
+1) Dead Man's Switch Repository
+2) I Need Help
+3) Settings
+4) Clean Repository
+5) Exit
+
+Select: 
+=== I NEED HELP MODE ===
+[*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
+
+=== First Time Setup for I Need Help ===
+This setup is shown before the first emergency activation.
+It configures capture intervals, SMS contacts, and Personal Details.
+[!] Personal Details can be uploaded to your GitHub dead-mans-switch repository.
+[!] In I Need Help mode, the repository is made PUBLIC so emergency contacts can access it.
+[!] Do NOT store passwords, bank/card details, private keys, seed phrases, ID numbers, or anything that could be used to steal from you.
+[!] Use this for identification and emergency-help information only.
+
+Use default capture intervals? (Y/n): 
+Emergency SMS contacts
+Add an emergency SMS contact now? (y/N): Name: Phone with country code, e.g. +306912345678: [✓] Contact added.
+Add an emergency SMS contact now? (y/N): [*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
+
+Personal Details
+Add Personal Details now? (recommended) (Y/n): 
+=== Add/Edit All Personal Details ===
+Leave blank to keep the current value. Type '-' to clear a field.
+First name: Last name: Nicknames / aliases: Phone number: Email: Age: Birthday: Blood type: Height: Weight: Sex / gender (optional): Nationality: Languages spoken: Country living in: City living in: Area / neighborhood: Home area/address or last known safe place: Eye color: Hair color: Body build: Skin/complexion description: Scars / birthmarks: Tattoos: Piercings: Medical conditions that emergency helpers should know: Allergies: Important medications: Emergency instructions: Trusted people / who should be contacted: Social usernames that can help identify you: Photo/appearance description: Usual clothing / accessories: Additional notes: [*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
+[✓] Personal details saved.
+[✓] First time I Need Help setup saved.
+
+=== I NEED HELP MODE ===
+[!] This will visibly activate emergency capture on THIS phone only.
+[!] It will make your GitHub repository PUBLIC.
+[!] It will capture available cameras, microphone segments, and location using Termux:API permissions.
+[!] It will send SMS alerts only to contacts you configured in Settings.
+[!] This action is visible and manual. It does not run secretly in the background.
+[!] Stop method: press Ctrl+C. The script will then push remaining files before exiting.
+[*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
+[*] Checking GitHub login status...
+
+[!] You are not logged in to GitHub CLI (gh).
+    Starting device/web login (modern, no password).
+    Follow the instructions in Termux.
+
+[2026-11-07 21:57:27] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh auth login --hostname github.com --git-protocol https --web
+[2026-11-07 22:00:09] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh auth status -h github.com
+[2026-11-07 22:00:09] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api user --jq .login
+[*] Ensuring repository exists and is PUBLIC...
+[2026-11-07 22:00:10] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh auth status -h github.com
+[2026-11-07 22:00:11] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead-Switch --jq .name
+[2026-11-07 22:00:12] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead-Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:12] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead-Switch --json name --jq .name
+[2026-11-07 22:00:12] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead-Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead-Switch'. (repository)
+[2026-11-07 22:00:12] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/DeadSwitch --jq .name
+[2026-11-07 22:00:13] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/DeadSwitch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:13] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/DeadSwitch --json name --jq .name
+[2026-11-07 22:00:13] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/DeadSwitch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/DeadSwitch'. (repository)
+[2026-11-07 22:00:13] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead_Switch --jq .name
+[2026-11-07 22:00:14] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead_Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:14] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead_Switch --json name --jq .name
+[2026-11-07 22:00:14] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead_Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead_Switch'. (repository)
+[2026-11-07 22:00:14] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead-Switch.py --jq .name
+[2026-11-07 22:00:15] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead-Switch.py --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:15] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead-Switch.py --json name --jq .name
+[2026-11-07 22:00:16] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead-Switch.py --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead-Switch.py'. (repository)
+[2026-11-07 22:00:16] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead Switch --jq .name
+[2026-11-07 22:00:16] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:16] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead Switch --json name --jq .name
+[2026-11-07 22:00:17] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead Switch'. (repository)
+[2026-11-07 22:00:17] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/dead-switch --jq .name
+[2026-11-07 22:00:18] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/dead-switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:18] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/dead-switch --json name --jq .name
+[2026-11-07 22:00:18] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/dead-switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/dead-switch'. (repository)
+[2026-11-07 22:00:18] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/dead-mans-switch --jq .name
+[2026-11-07 22:00:19] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/dead-mans-switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:19] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/dead-mans-switch --json name --jq .name
+[2026-11-07 22:00:19] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/dead-mans-switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/dead-mans-switch'. (repository)
+[*] Creating PUBLIC repo: 420CODINGTrypT/dead-mans-switch
+[2026-11-07 22:00:19] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api -X POST user/repos -f name=dead-mans-switch -f private=false -f auto_init=false
+[*] Repo created.
+[2026-11-07 22:00:23] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api -X PATCH repos/420CODINGTrypT/dead-mans-switch -f private=false
+[2026-11-07 22:00:24] [CMD_FAIL] rc=1 | gh api -X PATCH repos/420CODINGTrypT/dead-mans-switch -f private=false
+{"message":"Failed to update visibility. A previous repository operation is still in progress.","documentation_url":"https://docs.github.com/rest/repos/repos#update-a-repository","status":"422"}gh: Failed to update visibility. A previous repository operation is still in progress. (HTTP 422)
+[2026-11-07 22:00:24] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo edit 420CODINGTrypT/dead-mans-switch --visibility public --accept-visibility-change-consequences
+[✓] Saved repository visibility preference: PUBLIC
+[2026-11-07 22:00:25] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo edit 420CODINGTrypT/dead-mans-switch --visibility public --accept-visibility-change-consequences
+[2026-11-07 22:00:25] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global --add safe.directory /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
+[2026-11-07 22:00:25] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global --add safe.directory /sdcard/Download/Dead Man's Switch
+[2026-11-07 22:00:25] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global --add safe.directory /storage/emulated/0/Download/Dead Man's Switch
+[2026-11-07 22:00:26] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global user.name
+[2026-11-07 22:00:26] [CMD_FAIL] rc=1 | git config --global user.name
+[2026-11-07 22:00:26] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global user.email
+[2026-11-07 22:00:26] [CMD_FAIL] rc=1 | git config --global user.email
+[2026-11-07 22:00:26] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global user.name dead-mans-switch-termux
+[2026-11-07 22:00:26] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | git config --global user.email dead-mans-switch@localhost
+[*] Initializing local git repo...
+[2026-11-07 22:00:26] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git init
+[2026-11-07 22:00:26] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git config user.name dead-mans-switch-termux
+[2026-11-07 22:00:26] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git config user.email dead-mans-switch@localhost
+[2026-11-07 22:00:26] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git remote
+[2026-11-07 22:00:26] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git remote add origin https://github.com/420CODINGTrypT/dead-mans-switch.git
+[2026-11-07 22:00:26] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead-Switch --jq .name
+[2026-11-07 22:00:27] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead-Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:27] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead-Switch --json name --jq .name
+[2026-11-07 22:00:27] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead-Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead-Switch'. (repository)
+[2026-11-07 22:00:27] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/DeadSwitch --jq .name
+[2026-11-07 22:00:28] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/DeadSwitch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:28] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/DeadSwitch --json name --jq .name
+[2026-11-07 22:00:28] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/DeadSwitch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/DeadSwitch'. (repository)
+[2026-11-07 22:00:28] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead_Switch --jq .name
+[2026-11-07 22:00:29] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead_Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:29] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead_Switch --json name --jq .name
+[2026-11-07 22:00:30] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead_Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead_Switch'. (repository)
+[2026-11-07 22:00:30] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead-Switch.py --jq .name
+[2026-11-07 22:00:30] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead-Switch.py --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:30] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead-Switch.py --json name --jq .name
+[2026-11-07 22:00:31] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead-Switch.py --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead-Switch.py'. (repository)
+[2026-11-07 22:00:31] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead Switch --jq .name
+[2026-11-07 22:00:31] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:31] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead Switch --json name --jq .name
+[2026-11-07 22:00:32] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead Switch'. (repository)
+[2026-11-07 22:00:32] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/dead-switch --jq .name
+[2026-11-07 22:00:33] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/dead-switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:00:33] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/dead-switch --json name --jq .name
+[2026-11-07 22:00:33] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/dead-switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/dead-switch'. (repository)
+[2026-11-07 22:00:33] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/dead-mans-switch --jq .name
+[2026-11-07 22:00:34] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/dead-mans-switch --jq .default_branch
+[2026-11-07 22:00:35] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git fetch origin --prune
+[2026-11-07 22:00:35] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git ls-remote --heads origin main
+[2026-11-07 22:00:36] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git ls-remote --heads origin master
+[2026-11-07 22:00:37] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git checkout -B main
+
+=== GitHub Pages setup before I Need Help starts ===
+GitHub may require Pages to be enabled manually from the website/app.
+Do this once before starting emergency capture:
+  1) Open the repository settings:
+     https://github.com/420CODINGTrypT/dead-mans-switch/settings/pages
+  2) Go to: Settings > Pages
+  3) Source: Deploy from a branch
+  4) Branch: main
+  5) Folder: / (root)
+  6) Tap Save
+  7) Turn ON Enforce HTTPS if GitHub shows that option
+  8) Wait until GitHub says the site is published
+
+Expected website link: https://420CODINGTrypT.github.io/dead-mans-switch/
+Repository link: https://github.com/420CODINGTrypT/dead-mans-switch
+
+Open GitHub Pages settings in browser now? (y/N): [2026-11-07 22:01:35] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | termux-open-url https://github.com/420CODINGTrypT/dead-mans-switch/settings/pages
+
+Only continue after Pages is enabled or if you accept that the website may show 404 until you enable it.
+Press Enter to confirm GitHub Pages is enabled or you understand it may show 404 until enabled...Press Enter one more time to START I Need Help now...[!] Video capture command not found on this Termux setup.
+    Photos, audio, and location will continue. Video will be skipped unless a compatible command exists.
+[2026-11-07 22:02:50] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead-Switch --jq .name
+[2026-11-07 22:02:51] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead-Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:02:51] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead-Switch --json name --jq .name
+[2026-11-07 22:02:52] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead-Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead-Switch'. (repository)
+[2026-11-07 22:02:52] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/DeadSwitch --jq .name
+[2026-11-07 22:02:53] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/DeadSwitch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:02:53] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/DeadSwitch --json name --jq .name
+[2026-11-07 22:02:53] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/DeadSwitch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/DeadSwitch'. (repository)
+[2026-11-07 22:02:53] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead_Switch --jq .name
+[2026-11-07 22:02:54] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead_Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:02:54] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead_Switch --json name --jq .name
+[2026-11-07 22:02:54] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead_Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead_Switch'. (repository)
+[2026-11-07 22:02:54] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead-Switch.py --jq .name
+[2026-11-07 22:02:55] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead-Switch.py --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:02:55] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead-Switch.py --json name --jq .name
+[2026-11-07 22:02:56] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead-Switch.py --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead-Switch.py'. (repository)
+[2026-11-07 22:02:56] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead Switch --jq .name
+[2026-11-07 22:02:56] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:02:56] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead Switch --json name --jq .name
+[2026-11-07 22:02:57] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead Switch'. (repository)
+[2026-11-07 22:02:57] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/dead-switch --jq .name
+[2026-11-07 22:02:58] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/dead-switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:02:58] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/dead-switch --json name --jq .name
+[2026-11-07 22:02:58] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/dead-switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/dead-switch'. (repository)
+[2026-11-07 22:02:58] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/dead-mans-switch --jq .name
+[2026-11-07 22:02:59] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead-Switch --jq .name
+[2026-11-07 22:02:59] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead-Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:02:59] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead-Switch --json name --jq .name
+[2026-11-07 22:03:00] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead-Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead-Switch'. (repository)
+[2026-11-07 22:03:00] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/DeadSwitch --jq .name
+[2026-11-07 22:03:01] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/DeadSwitch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:03:01] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/DeadSwitch --json name --jq .name
+[2026-11-07 22:03:01] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/DeadSwitch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/DeadSwitch'. (repository)
+[2026-11-07 22:03:01] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead_Switch --jq .name
+[2026-11-07 22:03:02] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead_Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:03:02] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead_Switch --json name --jq .name
+[2026-11-07 22:03:02] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead_Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead_Switch'. (repository)
+[2026-11-07 22:03:02] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead-Switch.py --jq .name
+[2026-11-07 22:03:03] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead-Switch.py --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:03:03] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead-Switch.py --json name --jq .name
+[2026-11-07 22:03:04] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead-Switch.py --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead-Switch.py'. (repository)
+[2026-11-07 22:03:04] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/Dead Switch --jq .name
+[2026-11-07 22:03:04] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/Dead Switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:03:04] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/Dead Switch --json name --jq .name
+[2026-11-07 22:03:05] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/Dead Switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/Dead Switch'. (repository)
+[2026-11-07 22:03:05] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/dead-switch --jq .name
+[2026-11-07 22:03:05] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/dead-switch --jq .name
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}gh: Not Found (HTTP 404)
+[2026-11-07 22:03:05] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh repo view 420CODINGTrypT/dead-switch --json name --jq .name
+[2026-11-07 22:03:06] [CMD_FAIL] rc=1 | gh repo view 420CODINGTrypT/dead-switch --json name --jq .name
+GraphQL: Could not resolve to a Repository with the name '420CODINGTrypT/dead-switch'. (repository)
+[2026-11-07 22:03:06] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/dead-mans-switch --jq .name
+[2026-11-07 22:03:07] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/dead-mans-switch --jq .default_branch
+[2026-11-07 22:03:07] [CMD] cwd=/data/data/com.termux/files/home/DedSec/Scripts/Developer Base | gh api repos/420CODINGTrypT/dead-mans-switch/git/trees/main -f recursive=1
+[2026-11-07 22:03:08] [CMD_FAIL] rc=1 | gh api repos/420CODINGTrypT/dead-mans-switch/git/trees/main -f recursive=1
+{
+  "message": "Not Found",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "404"
+}gh: Not Found (HTTP 404)
+[*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
+[*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch

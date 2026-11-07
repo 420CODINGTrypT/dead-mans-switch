@@ -1,0 +1,12 @@
+Dead Man's Switch emergency session
+Started: 2026-11-07 22:03:13
+Website: https://420CODINGTrypT.github.io/dead-mans-switch/
+Repo: https://github.com/420CODINGTrypT/dead-mans-switch
+Photo interval: 5s
+Video interval: 5s
+Video duration: 5s
+Microphone interval/segment: 10s
+Location interval: 180s
+Push interval: 300s / 5 minutes
+Activation required two visible Enter confirmations from the device owner.
+Stop method: Ctrl+C.

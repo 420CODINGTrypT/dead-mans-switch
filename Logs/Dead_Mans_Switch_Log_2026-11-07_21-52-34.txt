@@ -1,0 +1,22 @@
+[*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
+[*] Folder exists: /data/data/com.termux/files/home/storage/downloads/Dead Man's Switch
+[✓] Static emergency website generated (12 file(s)).
+[2026-11-07 22:03:29] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git reset
+[2026-11-07 22:03:29] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- README.md
+[2026-11-07 22:03:29] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Sessions/session_20261107_220313/SESSION_INFO.txt
+[2026-11-07 22:03:29] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Profile/Personal_Details.json
+[2026-11-07 22:03:30] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Profile/Personal_Details.txt
+[2026-11-07 22:03:30] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- .gitignore
+[2026-11-07 22:03:30] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Locations/.gitkeep
+[2026-11-07 22:03:30] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Other/.gitkeep
+[2026-11-07 22:03:30] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Other/Logs__Dead_Mans_Switch_Log_2026-11-07_21-52-34.txt
+[2026-11-07 22:03:30] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Other/Logs__Dead_Mans_Switch_Log_2026-11-07_21-52-34_2.txt
+[2026-11-07 22:03:30] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Other/Logs__Dead_Mans_Switch_Log_2026-11-07_21-52-34_3.txt
+[2026-11-07 22:03:31] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Photos/.gitkeep
+[2026-11-07 22:03:31] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Profile/.gitkeep
+[2026-11-07 22:03:31] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Recordings/.gitkeep
+[2026-11-07 22:03:31] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Sessions/.gitkeep
+[2026-11-07 22:03:31] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Assets/Videos/.gitkeep
+[2026-11-07 22:03:31] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- History/.gitkeep
+[2026-11-07 22:03:31] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- History/Dead_Mans_Switch_Previous_2026-11-07_22-03-08_i_need_help_activation.zip
+[2026-11-07 22:03:31] [CMD] cwd=/data/data/com.termux/files/home/storage/downloads/Dead Man's Switch | git add -f -- Logs/Dead_Mans_Switch_Log_2026-11-07_21-52-34.txt

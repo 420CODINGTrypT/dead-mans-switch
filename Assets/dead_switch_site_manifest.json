@@ -1,0 +1,122 @@
+{
+  "app": "Dead Man's Switch",
+  "repo": "dead-mans-switch",
+  "owner": "420CODINGTrypT",
+  "repository_url": "https://github.com/420CODINGTrypT/dead-mans-switch",
+  "github_pages_url": "https://420CODINGTrypT.github.io/dead-mans-switch/",
+  "generated_at": "2026-11-07 22:03:28",
+  "total_files_indexed": 13,
+  "counts": {
+    "photos": 1,
+    "videos": 0,
+    "audio": 0,
+    "locations": 1,
+    "documents": 8
+  },
+  "files": [
+    {
+      "rel": "Logs/Dead_Mans_Switch_Log_2026-11-07_21-52-34.txt",
+      "kind": "Document",
+      "size_h": "88 B",
+      "date": "2026-11-07",
+      "time": "22:03:28",
+      "updated": "2026-11-07 22:03:28"
+    },
+    {
+      "rel": "Assets/Other/Logs__Dead_Mans_Switch_Log_2026-11-07_21-52-34_4.txt",
+      "kind": "Document",
+      "size_h": "4.1 KB",
+      "date": "2026-11-07",
+      "time": "22:03:28",
+      "updated": "2026-11-07 22:03:28"
+    },
+    {
+      "rel": "README.md",
+      "kind": "Document",
+      "size_h": "5.1 KB",
+      "date": "2026-11-07",
+      "time": "22:03:28",
+      "updated": "2026-11-07 22:03:28"
+    },
+    {
+      "rel": "Assets/Locations/session_20261107_220313/location_20261107_220314.json",
+      "kind": "Location",
+      "size_h": "123 B",
+      "date": "2026-11-07",
+      "time": "22:03:13",
+      "updated": "2026-11-07 22:03:15"
+    },
+    {
+      "rel": "Assets/Sessions/session_20261107_220313/SESSION_INFO.txt",
+      "kind": "Emergency session",
+      "size_h": "424 B",
+      "date": "2026-11-07",
+      "time": "22:03:13",
+      "updated": "2026-11-07 22:03:13"
+    },
+    {
+      "rel": "Assets/Sessions/session_20261107_220313/camera_test.jpg",
+      "kind": "Photo",
+      "size_h": "0 B",
+      "date": "2026-11-07",
+      "time": "22:03:13",
+      "updated": "2026-11-07 22:03:14"
+    },
+    {
+      "rel": "Assets/Other/Logs__Dead_Mans_Switch_Log_2026-11-07_21-52-34_3.txt",
+      "kind": "Document",
+      "size_h": "176 B",
+      "date": "2026-11-07",
+      "time": "22:03:12",
+      "updated": "2026-11-07 22:03:12"
+    },
+    {
+      "rel": "Assets/Other/Logs__Dead_Mans_Switch_Log_2026-11-07_21-52-34_2.txt",
+      "kind": "Document",
+      "size_h": "1.5 KB",
+      "date": "2026-11-07",
+      "time": "22:03:12",
+      "updated": "2026-11-07 22:03:12"
+    },
+    {
+      "rel": "History/Dead_Mans_Switch_Previous_2026-11-07_22-03-08_i_need_help_activation.zip",
+      "kind": "File",
+      "size_h": "6.7 KB",
+      "date": "2026-11-07",
+      "time": "22:03:08",
+      "updated": "2026-11-07 22:03:08"
+    },
+    {
+      "rel": "Assets/Other/Logs__Dead_Mans_Switch_Log_2026-11-07_21-52-34.txt",
+      "kind": "Document",
+      "size_h": "29.5 KB",
+      "date": "2026-11-07",
+      "time": "22:03:08",
+      "updated": "2026-11-07 22:03:08"
+    },
+    {
+      "rel": ".gitignore",
+      "kind": "File",
+      "size_h": "45 B",
+      "date": "2026-11-07",
+      "time": "22:00:26",
+      "updated": "2026-11-07 22:00:26"
+    },
+    {
+      "rel": "Assets/Profile/Personal_Details.txt",
+      "kind": "Personal profile",
+      "size_h": "518 B",
+      "date": "2026-11-07",
+      "time": "21:57:27",
+      "updated": "2026-11-07 21:57:27"
+    },
+    {
+      "rel": "Assets/Profile/Personal_Details.json",
+      "kind": "Personal profile",
+      "size_h": "823 B",
+      "date": "2026-11-07",
+      "time": "21:57:27",
+      "updated": "2026-11-07 21:57:27"
+    }
+  ]
+}
